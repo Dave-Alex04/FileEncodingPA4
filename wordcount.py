@@ -20,5 +20,5 @@ def wordcount():
         
             except FileNotFoundError: #ensures the file can be found before the word count is initiated
                 print("File not found. )")
-        else: #give user the option to get another word count or return to menu
-            print("Enter a number from 0-9, or -1 to return to the menu: ")
+        else: #ensures the user stays within the prompt restraints
+            print("Invalid input.. Enter a number from 0-9 to continue, or -1 to return to the menu: ")

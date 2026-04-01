@@ -29,5 +29,5 @@ def encode():
                     print("Your file has been encoded and saved.")
                 except FileNotFoundError: #ensures files can be found before encryption
                     print("File not found.")
-            else: #give option for user to encode another file or return to menu
-                print("Enter a number from 0-9 to continue, or -1 to return to the menu: ")
+            else: #ensures the user stays within the prompt restraints
+                print("Invalid input.. Enter a number from 0-9 to continue, or -1 to return to the menu: ")
