@@ -10,15 +10,15 @@ def wordcount():
         if prompt == -1:
             break
         elif 0 <= prompt <= 9:
-            try:
+            try: #receive the .txt file from the user
                 file_input = input("Input the file you would like to get the word count for (.txt file only): ")
 
                 with open('toot.txt', 'r') as file:
                     data = file.read()
-                    words = data.split()
-                    print(f"Total words: {len(words)}")
+                    words = data.split() #puts words into a list
+                    print(f"Total words: {len(words)}") #counts the words in the list and returns them to the user
         
-            except FileNotFoundError:
+            except FileNotFoundError: #ensures the file can be found before the word count is initiated
                 print("File not found. )")
-        else:
+        else: #give user the option to get another word count or return to menu
             print("Enter a number from 0-9, or -1 to return to the menu: ")
